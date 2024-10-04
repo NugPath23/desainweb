@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <link rel="manifest" href="/manifest.json">
+    <link rel="icon" href="kepalalkmmtd.png" sizes="192x192">
+    
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-image: url(glowing-sky-sphere-orbits-starry-galaxy-generated-by-ai.jpg);
+            background-size: 230vh;
+            font-family: 'Poppins';
+        }
+
+        nav div img {
+            width: 5%;
+            
+        }
+
+        nav div{
+            display: flex;
+            justify-content: end;
+        }
+
+        body nav{
+            background-color: black;
+            display: flex;
+            align-items: center;
+            padding: 1rem;
+            position: fixed;
+            z-index: 1000;
+        }
+
+        body nav ul{
+            display: flex;
+            list-style: none;
+            padding: 10px;
+            gap: 2rem;
+
+        }
+
+        body nav ul li a{
+            padding: 5px 0;
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            transition: all;
+            transition-duration: 300ms;
+            border-bottom: 2px solid rgba(255, 0, 0, 0);
+        }
+
+        body nav ul li a:hover{
+            color: rgb(0, 109, 7);
+            border-bottom: 2px solid rgb(0, 171, 11);
+        }
+
+        .WAstyle{
+            padding: 10px 0 10px 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        div .WA{
+            width: 40px;
+            padding: 5px;
+            background-color: white;
+            border-radius: 10px;
+        }
+
+        .IGstyle{
+            padding: 10px 0 10px 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        div .IG{
+            width: 40px;
+            padding: 5px;
+            background-color: white;
+            border-radius: 10px;
+        }
+
+        .nomor{
+            color: white;
+            padding: 0 0 0 10px;
+            font-size: 16px;
+        }
+
+        .IG-nugi{
+            color: white;
+            padding: 0 0 0 10px;
+            font-size: 16px;
+        }
+
+        h3 {
+            color: white;
+            padding: 10px 0 10px 15px;
+        }
+
+        .container-input{
+            display: flex;  
+            justify-content: center;
+            align-items: center;
+            padding-top: 100px;
+            padding-bottom: 50px;
+        }
+
+        .container2-input{
+            width: 420px;
+            padding: 30px;
+            box-sizing: content-box;
+            background-color: transparent;
+            border: 2px solid rgba(255, 255, 255, .2);
+            backdrop-filter: blur(20px);
+            box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+            justify-content: center;
+            border-radius: 10px;
+        }
+
+        .judul-input{
+            display: flex;
+            justify-content: center;
+        }
+
+        .judulnya{
+            color: white;
+            font-size: 40px;
+            text-transform: uppercase;
+        }
+
+        .bag-name, .bag-email, .bag-pesan {
+            margin: 10px;
+        }
+
+        .isi-name{
+            border: 2px solid rgba(255, 255, 255, 0.5);
+            border-radius: 10px;
+        }
+
+        .name-input{
+            padding: 5px;
+            font-size: 20px;
+            color: white;
+            background: transparent;
+            border: none;
+            width: 100%;
+        }
+        
+        .isi-email{
+            border: 2px solid rgba(255, 255, 255, 0.5);
+            border-radius: 10px;
+        }
+
+        .email-input{
+            padding: 5px;
+            font-size: 20px;
+            color: white;
+            background: transparent;
+            border: none;
+            width: 100%;
+        }
+
+        .isi-pesan{
+            border: 2px solid rgba(255, 255, 255, 0.5);
+            border-radius: 10px;
+        }
+
+        .message-input{
+            padding: 5px;
+            font-size: 20px;
+            color: white;
+            background: transparent;
+            border: none;
+            resize: none;
+            width: 100%;
+        }
+
+        ::placeholder{
+            color: white;
+            opacity: 0.5;
+        }
+
+        .tombol-submit{
+            width: 150px;
+            padding: 10px;
+            border: transparent;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 20px;
+            text-transform: uppercase;
+            background-color: rgb(255, 123, 0);
+            color: white;
+            transition: all;
+            transition-duration: 300ms;
+        }
+
+        .bag-submit{
+            display: flex;
+            justify-content: center;
+            padding: 10px 0 10px 0;
+        }
+
+        .tulisan-ya, .tulisan-tidak{
+            color: aliceblue;
+        }
+
+        .bag-opsi{
+            padding: 10px 0 10px 15px;
+        }
+
+        .bag-opsi form label{
+            color: white;
+        }
+
+        .bag-radio{
+            padding: 10px 0 10px 15px;
+        }
+
+        #options{
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        .tombol-submit:hover{
+            background-color: rgb(255, 161, 72);
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="about.html">About</a>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+        </ul>
+        
+        <div>
+            <img src="/Asset 1@4x.png" alt="logolkmmtd">
+        </div>
+    </nav>
+
+    <div class="container-input">
+        <div class="container2-input">
+            <div class="judul-input">
+                <p class="judulnya">Feedback nya kaka</p>
+            </div>
+            <div class="bag-name">
+                <form class="isi-name">
+                    <input class="name-input" type="text" id="name" name="name" placeholder="Username">
+                </form>
+            </div>
+            <div class="bag-email">
+                <form class="isi-email">
+                    <input class="email-input" type="text" id="name" name="email" placeholder="Email" >
+                </form>
+            </div>
+            <div class="bag-pesan">
+                <form class="isi-pesan">
+                    <textarea class="message-input" id="message" name="message" rows=5 placeholder="Message"></textarea>
+                </form>
+            </div>
+
+            <div class="bag-opsi">
+                <form>
+                    <label for="options">Ketegori pesan:</label>
+                    <select id="options" name="options">
+                      <option value="option1">Pertanyaan</option>
+                      <option value="option2">Saran</option>
+                      <option value="option3">Masalah</option>
+                    </select>
+                  </form>
+            </div>
+
+            <div class="bag-radio">
+                <input class="radio-ya" name="opsi" type="radio">
+                <label class="tulisan-ya" for="Ya">Ya</label>
+                <input class="radio-tidak" name="opsi" type="radio">
+                <label class="tulisan-tidak" for="Tidak">Tidak</label>
+            </div>
+
+            <div class="bag-submit">
+                <form id="myForm" onsubmit="showAlert(); return false;">
+                    <button class="tombol-submit" type="submit">submit</button>
+                </form>
+            </div> 
+
+            <script>
+                function showAlert() {
+                    alert("Form berhasil dikirim, YEAYYYY");
+                }
+            </script>
+
+            <div class="iconIGWA">
+                <h3>Contact me</h3>
+                <div class="WAstyle">
+                    <img class="WA" src="26.png" alt="Whatsapp">
+                    <p class="nomor">082288796078</p>
+                </div>
+                <div class="IGstyle">
+                    <img class="IG" src="27.png" alt="Instagram">
+                    <p class="IG-nugi">@nugraha_2312</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

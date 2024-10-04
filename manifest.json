@@ -1,0 +1,22 @@
+{
+    "name": "M Nugraha Patria",
+    "short_name": "Nugi",
+    "start_url": "/",
+    "display": "standalone",
+    "theme_color": "#000000",
+    "background-color": "#ffffff",
+    "orientation": "portrait",
+    "scope": "/",
+    "icons": [
+      {
+        "src": "/Logo-Unand-PTNBH-kecil.png",
+        "sizes": "90x110",
+        "type": "image/png"
+      },
+      {
+        "src": "/kepalalkmmtd.png",
+        "sizes": "90x52",
+        "type": "image/png"
+      }
+    ]
+  }

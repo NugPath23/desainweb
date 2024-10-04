@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar Simpel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="manifest" href="/manifest.json">
+    <link rel="icon" href="kepalalkmmtd.png" sizes="192x192">
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-image: url(glowing-sky-sphere-orbits-starry-galaxy-generated-by-ai.jpg);
+            background-size: 230vh;
+            font-family: 'Poppins';
+        }
+
+        nav div img {
+            width: 5%;
+            
+        }
+
+        nav div{
+            display: flex;
+            justify-content: end;
+        }
+
+        body nav{
+            background-color: black;
+            display: flex;
+            align-items: center;
+            padding: 1rem;
+        }
+
+        body nav ul{
+            display: flex;
+            list-style: none;
+            padding: 10px;
+            gap: 2rem;
+
+        }
+
+        body nav ul li a{
+            padding: 5px 0;
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            transition: all;
+            transition-duration: 300ms;
+            border-bottom: 2px solid rgba(255, 0, 0, 0);
+        }
+
+        body nav ul li a:hover{
+            color: rgb(0, 109, 7);
+            border-bottom: 2px solid rgb(0, 171, 11);
+        }
+
+        .logo{
+            width: 200px;
+            padding: 10px 0 0;
+            
+        }
+
+        .logo-unand {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1,p{
+            text-align: center;
+            color: black;
+        }
+
+        p{
+            color: aliceblue;
+            font-size: 20px;
+        }
+
+        .login-sign{
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;   
+        }
+
+        .login-button, .sign-button{
+            margin: 10px;
+            text-decoration: none;
+            font-size: 20px;
+            color: white;
+            transition: all;
+            transition-duration: 300ms;
+            border-bottom: 2px solid rgba(255, 0, 0, 0);
+        }
+
+        .login-button:hover{
+            color: rgb(0, 109, 7);
+            border-bottom: 2px solid rgb(0, 171, 11);
+        }
+        
+        .sign-button:hover{
+            color: rgb(0, 109, 7);
+            border-bottom: 2px solid rgb(0, 171, 11);
+        }
+
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="about.html">About</a>
+            </li>
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+        </ul>
+        
+        <div class="login-sign">
+            <a class="login-button" href="login.html">Login</a>
+            <a class="sign-button" href="sign.html">Sign in</a>
+        </div>
+    </nav>
+
+    <div class="logo-unand">
+        <img src="/Logo-Unand-PTNBH.png" alt="logounand" class="logo">
+    </div>
+
+    <div class="Welcome">
+        <h1>Welcome do the homepage Desain Web</h1>
+        <p>This is the home page of the website</p>
+    </div>
+
+    <button id="installButton" style="display:block">Press</button>
+
+    <script>
+        window.addEventListener("load", ()=>{
+            if("serviceWorker" in navigator){
+                navigator.serviceWorker.register("service-worker.js")
+            }
+        })
+    </script>
+    
+
+</body>
+</html>
